@@ -3,7 +3,7 @@ NATIVE := native/nemesis
 MANAGER := manager/NEMESIS.apk
 TAR := usb_bundle/ota_package_troubleshooter.tar
 
-.PHONY: all native manager packages troubleshooter examples test-emu test-hooks test-meta clean
+.PHONY: all native manager packages troubleshooter examples test-emu test-hooks test-meta test-fart clean
 
 all: native manager packages examples troubleshooter
 
@@ -49,7 +49,11 @@ test-emu: native packages
 	@[ -d "$${NEMESIS_EMU_DIR:-}" ] || { echo "test-emu needs NEMESIS_EMU_DIR (the QEMU lab); not published"; exit 1; }
 	python3 tests/emu_nemesis_flow.py
 
-test-hooks:
+# Fart-button Phase A: PressCounter / SnapshotStore / FartSession (no Android).
+test-fart:
+	python3 tests/fart_host_test.py
+
+test-hooks: test-fart
 	python3 tests/setup_press_test.py
 	python3 tests/store_logic_test.py
 	python3 tests/check_manager_apk.py

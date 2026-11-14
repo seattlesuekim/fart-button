@@ -29,7 +29,8 @@ Optional / not published:
 cd Sources
 make                    # native + manager + packages + examples + troubleshooter tar
 make test-meta          # host C test
-make test-hooks         # Python/bash host checks (needs JDK; APK checks need a built Manager)
+make test-fart          # fart-button host unit tests (PressCounter / session; needs JDK)
+make test-hooks         # includes test-fart, plus Manager/store/hook checks (needs JDK; APK checks need a built Manager)
 ```
 
 Signing keystore for Manager is **generated locally** by `make -C manager keystore` (password in Makefile for the stock NEMESIS debug key). Do not commit `*.keystore` or build outputs.
