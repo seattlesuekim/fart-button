@@ -1,0 +1,37 @@
+{
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.formatOnSave": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/__pycache__": true,
+    "Sources/manager/classes": true,
+    "Sources/manager/gen": true,
+    "Sources/engine_sound/classes": true,
+    "Sources/engine_sound/gen": true,
+    "Sources/engine_sound/host-out": true,
+    "Sources/out": true
+  },
+  "files.watcherExclude": {
+    "**/Sources/manager/classes/**": true,
+    "**/Sources/manager/gen/**": true,
+    "**/Sources/out/**": true,
+    "**/ota_package.tar": true
+  },
+  "java.configuration.updateBuildConfiguration": "disabled",
+  "java.import.maven.enabled": false,
+  "java.import.gradle.enabled": false,
+  "java.project.sourcePaths": [
+    "Sources/manager/src",
+    "Sources/engine_sound/src"
+  ],
+  "java.project.outputPath": "Sources/out/ide-classes",
+  "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
+  "makefile.makefilePath": "Sources/Makefile",
+  "python.defaultInterpreterPath": "python3",
+  "python.analysis.extraPaths": [
+    "Sources/tools",
+    "Sources/tests"
+  ]
+}

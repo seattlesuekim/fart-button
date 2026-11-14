@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "fart-button (hmg_nemesis)"
+    }
+  ],
+  "settings": {
+    "makefile.makefilePath": "Sources/Makefile"
+  },
+  "extensions": {
+    "recommendations": [
+      "vscjava.vscode-java-pack",
+      "ms-vscode.cpptools",
+      "ms-python.python",
+      "ms-vscode.makefile-tools",
+      "EditorConfig.EditorConfig"
+    ]
+  }
+}

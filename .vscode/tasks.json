@@ -1,0 +1,71 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "make all (Sources)",
+      "type": "shell",
+      "command": "make",
+      "options": {
+        "cwd": "${workspaceFolder}/Sources"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "make native",
+      "type": "shell",
+      "command": "make native",
+      "options": {
+        "cwd": "${workspaceFolder}/Sources"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "make manager",
+      "type": "shell",
+      "command": "make manager",
+      "options": {
+        "cwd": "${workspaceFolder}/Sources"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "make test-meta",
+      "type": "shell",
+      "command": "make test-meta",
+      "options": {
+        "cwd": "${workspaceFolder}/Sources"
+      },
+      "group": "test",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "make test-hooks",
+      "type": "shell",
+      "command": "make test-hooks",
+      "options": {
+        "cwd": "${workspaceFolder}/Sources"
+      },
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "make clean",
+      "type": "shell",
+      "command": "make clean",
+      "options": {
+        "cwd": "${workspaceFolder}/Sources"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

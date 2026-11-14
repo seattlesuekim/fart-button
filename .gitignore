@@ -1,0 +1,44 @@
+# Build outputs (Sources/)
+Sources/out/
+Sources/native/nemesis
+Sources/native/*.o
+Sources/manager/classes/
+Sources/manager/gen/
+Sources/manager/classes.dex
+Sources/manager/res.apk
+Sources/manager/unsigned.apk
+Sources/manager/NEMESIS.apk
+Sources/manager/nemesis.keystore
+Sources/engine_sound/classes/
+Sources/engine_sound/gen/
+Sources/engine_sound/host-out/
+Sources/engine_sound/classes.dex
+Sources/engine_sound/hook.dex
+Sources/engine_sound/res.apk
+Sources/engine_sound/unsigned.apk
+Sources/engine_sound/EngineSound.apk
+Sources/engine_sound/pkg/app/
+Sources/engine_sound/out/
+Sources/usb_bundle/ota_package_troubleshooter.tar
+Sources/usb_bundle/ota_package.tar
+
+# Local / IDE
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.DS_Store
+*.swp
+*~
+
+# Local env overrides (none required by upstream; keep secrets out of git)
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/

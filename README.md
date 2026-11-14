@@ -1,3 +1,36 @@
+# fart-button
+
+A Hyundai Ioniq 5 project based on **[xwtk/hmg_nemesis](https://github.com/xwtk/hmg_nemesis)** (NEMESIS — Gen5W AVNT root / package framework).
+
+> **Status:** Foundation setup only — git remotes, development-environment documentation, and IDE scaffolding. **No fart-button application or feature code** has been added yet.
+
+## Relationship to upstream
+
+| Remote | URL | Role |
+|--------|-----|------|
+| `origin` | https://github.com/seattlesuekim/fart-button | This project repo (Sue Kim) |
+| `upstream` | https://github.com/xwtk/hmg_nemesis | Canonical NEMESIS sources |
+
+**Git history note:** `seattlesuekim/fart-button` began with a placeholder `main` commit (unrelated history). The setup branch `setup/ioniq5-fart-button-foundation` is based directly on `upstream/main` so NEMESIS history stays intact. Prefer merging or replacing `main` from that branch rather than inventing a second copy of the tree.
+
+```bash
+git remote add upstream https://github.com/xwtk/hmg_nemesis.git   # once
+git fetch upstream
+git checkout setup/ioniq5-fart-button-foundation
+```
+
+License remains **GNU AGPL 3.0** (see [LICENSE](LICENSE)) as required by upstream.
+
+## Local development & hardware
+
+See **[CONTRIBUTING.md](CONTRIBUTING.md)** for toolchain requirements (JDK, Android SDK build-tools, NDK r21e, Python 3, Make), host tests, USB / head-unit notes, and Cursor Cloud environment guidance.
+
+## Cursor Cloud Agent environments
+
+Project workers **cannot** customize a Cloud Agent `environment.json` for you. If you need a prebuilt cloud image with the Android SDK/NDK, configure it in the [Cursor Dashboard → Cloud Agents → Environments](https://cursor.com/dashboard/cloud-agents/environments).
+
+---
+
 # NEMESIS
 
 Own your car, to its fullest.
@@ -151,3 +184,4 @@ Documents **01** and **03** are the only ones that describe the DSP Update Agent
 
 
 Developed by Gor Mirzoyan (xwtk.cloud).
+ Upstream project: https://github.com/xwtk/hmg_nemesis

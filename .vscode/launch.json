@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Host: meta_host_test (after make test-meta)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Sources/out/meta_host_test",
+      "args": [],
+      "cwd": "${workspaceFolder}/Sources",
+      "MIMode": "gdb",
+      "preLaunchTask": "make test-meta",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "Python: store_logic_test",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/Sources/tests/store_logic_test.py",
+      "cwd": "${workspaceFolder}/Sources",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: setup_press_test",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/Sources/tests/setup_press_test.py",
+      "cwd": "${workspaceFolder}/Sources",
+      "console": "integratedTerminal"
+    }
+  ]
+}
