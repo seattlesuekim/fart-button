@@ -1,0 +1,23 @@
+[nemesis]
+version=1.1
+id=fart.button
+name=Fart Button
+type=application,service
+package-version=0.1.0
+short-desc="Blower high + fresh air for 8s, then restore."
+os=any
+models=any
+postinstall=scripts/post.sh
+preuninstall=scripts/preun.sh
+
+[app.0]
+kind=sh
+path=bin/fart.sh
+uid=root
+
+[service.0]
+name=fart-daemon
+kind=sh
+path=svc/daemon.sh
+uid=root
+mode=restart

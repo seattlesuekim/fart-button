@@ -16,6 +16,7 @@ RUNNERS = (
     "com.nemesis.fart.PressCounterRun",
     "com.nemesis.fart.SnapshotStoreRun",
     "com.nemesis.fart.FartSessionRun",
+    "com.nemesis.fart.MyMenuIntentsRun",
 )
 
 

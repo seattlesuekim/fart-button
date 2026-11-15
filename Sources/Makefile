@@ -27,6 +27,7 @@ packages: native
 	python3 tools/make_nemesis_package.py packages/adb-tcp -o out/adb.tcp.zip
 	python3 tools/make_nemesis_package.py packages/wireless-projection -o out/wireless.projection.zip
 	python3 tools/make_nemesis_package.py packages/busybox -o out/busybox.zip
+	python3 tools/make_nemesis_package.py packages/fart-button -o out/fart.button.zip
 	cp -f out/hello.tool.zip examples/usb-stick-install/packages/hello.tool.zip
 	mkdir -p examples/usb-stick-voicehandler-vr-gates/packages
 	cp -f out/voicehandler.vr-gates.zip examples/usb-stick-voicehandler-vr-gates/packages/voicehandler.vr-gates.zip
